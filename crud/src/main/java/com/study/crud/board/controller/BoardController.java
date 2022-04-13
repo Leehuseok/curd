@@ -12,4 +12,9 @@ public class BoardController {
 		System.out.println("여기 들어왔니??");
 		return "index";
 	}
+	@RequestMapping("/boardList")
+	String boardList(Model model) {
+		System.out.println("boardList 페이지입니다.");
+		return "boardList";
+	}
 }
